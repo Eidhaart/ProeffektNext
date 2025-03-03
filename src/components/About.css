@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+.about-us-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 40px;
+  font-family: "Poppins", sans-serif;
+  min-height: 500px;
+  flex-wrap: wrap; /* Allows content to adjust better on smaller screens */
+  flex-direction: column;
+}
+
+.about-us-text h2 {
+  color: #ffa500;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.about-us-text {
+  background-color: rgba(46, 46, 46, 0.9);
+  border-radius: 10px;
+  max-width: 50%; /* Increased for better responsiveness */
+  padding: 20px;
+  margin: 5% auto; /* Centers the box and prevents it from getting too close to edges */
+  text-align: center; /* Keeps text centered for better readability */
+  font-size: 0.7rem;
+}
+
+.about-us-text p {
+  line-height: 1.8; /* Improved readability */
+  font-size: 1.1em; /* Slightly larger text for clarity */
+}
+
+@media (max-width: 768px) {
+  .about-us-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    min-height: auto;
+  }
+
+  .about-us-image {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 100%;
+  }
+
+  .about-us-text {
+    max-width: 80%; /* Adjusted to keep text readable on smaller screens */
+    padding: 15px;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us-text {
+    max-width: 90%; /* Ensures text box remains readable */
+    padding: 15px;
+  }
+}

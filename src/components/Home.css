@@ -1,0 +1,144 @@
+.home-container {
+  height: 88vh; /* Default height */
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start; /* Initially align children to the start */
+  align-items: center;
+  text-align: left; /* Text align left for the text within the box */
+  color: white;
+  transition: height 0.5s ease; /* Smooth transition for resizing */
+  background-image: url("/renovation.jpg");
+
+  padding-right: 10%; /* Add some padding on the right */
+}
+
+.proeffekt-title {
+  color: orange; /* Sets the text color to orange */
+  font-weight: bold; /* Makes the text bold */
+  font-variant: small-caps; /* Applies small caps style */
+  text-align: left; /* Centers the text */
+  padding-top: 10px; /* Adds some space above the text */
+}
+
+.orange-bar {
+  height: 2px; /* Sets the height of the horizontal bar */
+  background-color: orange; /* Sets the bar color to orange */
+  width: 100%; /* Makes the bar span the full width of its container */
+  margin-bottom: 5px; /* Adds some space below the bar */
+}
+
+button {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.text-container {
+  background-color: rgba(46, 46, 46, 0.9); /* Transparent grey background */
+  border-radius: 5px; /* Optional: adds rounded corners to the text box */
+  max-width: 40%; /* Limits the width of the text box, adjust as needed */
+  padding: 20px;
+
+  padding-top: 0px;
+  margin: 10%;
+}
+
+/* Add to your Home.css */
+/* Update to your Home.css */
+.home-bottom-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center items horizontally */
+  padding: 10px;
+  background-color: none; /* Light background for the bar */
+  color: ivory; /* Text color */
+  gap: 5%;
+  font-size: 0.8rem;
+  font-weight: bold;
+  flex-direction: column;
+}
+
+.home-bottom-bar p {
+  margin-left: 20px; /* Adds space between the button and the text */
+  /* Removed flex-grow to allow inline arrangement */
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1100px) {
+  .home-bottom-bar {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center items horizontally */
+    padding: 20px;
+    background-color: none; /* Light background for the bar */
+    border-radius: 10px;
+    color: ivory;
+    font-size: 1rem;
+  }
+
+  .home-bottom-bar p {
+    margin-bottom: 30px;
+  }
+
+  .home-container {
+    justify-content: center; /* Center the children */
+    padding: 0; /* Remove padding */
+  }
+
+  .text-container {
+    max-width: 90%; /* Make the text container 90% wide */
+    margin: 0 auto; /* Center the text container */
+    margin-top: 2%; /* Maintain top margin */
+  }
+}
+
+.estimate-button {
+  color: #16161d !important;
+}
+
+.contact-button {
+  float: right;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-variant: small-caps;
+  background-color: #ff9800; /* Material-UI orange 500 */
+  color: #1d1d16;
+  padding: 10px 20px;
+  margin-right: 20px;
+  border: none;
+  border-radius: 4px; /* Rounded corners like Material-UI */
+  cursor: pointer; /* Cursor indicates button */
+  transition: background-color 0.3s ease, box-shadow 0.2s ease; /* Smooth transition for visual feedback */
+  outline: none; /* Removes default focus outline */
+  text-transform: uppercase; /* Material-UI buttons are typically uppercase */
+  text-align: center; /* Ensures text is centered */
+  -webkit-tap-highlight-color: transparent; /* Removes mobile browser tap highlight */
+}
+
+.contact-button:hover {
+  background-color: #fb8c00; /* Material-UI orange 600 for hover state */
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2); /* Shadow effect for depth */
+}
+
+.contact-button:focus {
+  background-color: #f57c00; /* Material-UI orange 700 for focus state */
+  box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+}
+
+.contact-button:active {
+  background-color: #ef6c00; /* Material-UI orange 800 for active state */
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2); /* Deepest shadow for "pressed" effect */
+}
+
+.text-container p {
+  font-size: 1rem;
+  margin-top: 10%;
+  margin-bottom: 15%;
+  filter: opacity(80%);
+}
+
+.text-container h1 {
+  text-align: start;
+  font-size: 2.2rem;
+}

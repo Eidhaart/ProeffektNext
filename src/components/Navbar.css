@@ -1,0 +1,150 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+  background: #2c2d2e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  box-sizing: border-box;
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  border-bottom: orange solid 2px;
+  box-shadow: #2c2d2e6b 0.5px 0.5px 10px;
+  height: 60px;
+}
+
+.logo-and-title {
+  display: flex;
+  align-items: center;
+}
+
+.navbar span {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  margin-left: 15px;
+  font-variant: small-caps;
+  transition: all 0.1s ease;
+  font-size: 0.9rem;
+}
+
+.logo img {
+  height: 50px;
+  transition: all 0.1s ease;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin-right: 5%;
+  padding-left: 0;
+  transition: all 0.1s ease;
+}
+
+.nav-links li {
+  padding: 5px 12px;
+  cursor: pointer;
+  transition: color 0.3s ease, background 0.3s ease;
+  font-variant: small-caps;
+  font-weight: 300;
+  font-size: 0.8rem;
+  border-radius: 4px;
+}
+
+.nav-links li:hover {
+  color: orange;
+  background: rgba(255, 165, 0, 0.2);
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 1050px) {
+  .navbar span {
+    font-size: 0.85rem;
+  }
+  .nav-links li {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 1250px) {
+  .logo img {
+    height: 40px;
+  }
+}
+
+@media (max-width: 750px) {
+  .navbar {
+    justify-content: space-between;
+    height: 50px;
+  }
+
+  .logo img {
+    height: 35px;
+  }
+
+  .logo-and-title {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .navbar span {
+    font-size: 0.8rem;
+    margin-left: 10px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    background-color: rgba(44, 45, 46, 0.95);
+    box-shadow: #2c2d2e 1px 1px 3px;
+    border-radius: 0 0 8px 8px;
+    padding: 0;
+  }
+
+  .nav-links.open {
+    max-height: 250px;
+    padding: 10px 0;
+  }
+
+  .nav-links li {
+    width: 100%;
+    padding: 12px 0;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 400;
+    transition: background 0.3s ease;
+  }
+
+  .nav-links li:hover {
+    background: rgba(255, 165, 0, 0.2);
+  }
+
+  .hamburger-menu {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+  }
+}
