@@ -1,9 +1,18 @@
 /* src/components/Services.css */
+.services-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background for the section */
+  color: #16161d; /* Text color */
+}
 
 .title h2 {
-  padding-top: 20px;
   text-align: center;
   font-size: 2rem;
+  color: #ff9800;
 }
 
 .title p {
@@ -59,7 +68,7 @@
   height: 140px; /* Fixed height for images */
   object-fit: cover; /* Ensures images cover the area without distorting aspect ratio */
 
-  filter: brightness(70%);
+  filter: brightness(100%);
   transition: all 0.2s ease-in-out;
 }
 .card:hover .cardMedia {
@@ -69,7 +78,7 @@
 }
 
 .card:hover {
-  transform: scale(1.01);
+  transform: scale(1);
 }
 
 .cardContent {

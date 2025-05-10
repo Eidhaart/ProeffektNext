@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import "./Services.css"; // Assume you have corresponding CSS for styling
 
@@ -7,13 +6,13 @@ const Services = () => {
   const CardComponent = ({ img, imgAlt, header, text }) => {
     return (
       <div className="card">
-        <a href="#" className="cardActionArea">
+        <div href="#" className="cardActionArea">
           <img src={img} alt={imgAlt} className="cardMedia" />
           <div className="cardContent">
             <h2 className="header">{header}</h2>
             <p className="text">{text}</p>
           </div>
-        </a>
+        </div>
       </div>
     );
   };

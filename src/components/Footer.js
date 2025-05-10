@@ -1,9 +1,8 @@
 "use client";
 
 import React from "react";
-import "./Footer.css"; // Ensure the CSS file is linked
+import "./Footer.css";
 import { IoLogoFacebook, IoMailOutline, IoCallOutline } from "react-icons/io5";
-import logo from "./logo512.png"; // Update the path as needed
 
 const Footer = () => {
   return (
@@ -11,7 +10,11 @@ const Footer = () => {
       <div className="footer-content">
         <div className="left-column">
           <div className="footer-left">
-            <img src={logo} alt="Company Logo" className="footer-logo" />
+            <img
+              src="./logo512.png"
+              alt="Company Logo"
+              className="footer-logo"
+            />
             <div className="company-info">
               <h1>Proeffekt AB</h1>
               <p>Jakub Binkowski - VD</p>
@@ -35,13 +38,20 @@ const Footer = () => {
             <a href="#contact">Kontakt</a>
             <a href="#privacy-policy">Dataskyddspolicy</a>
           </div>
-          <a href="#design" className="design-credit">
-            Designed By Eidhaart
-          </a>
         </div>
       </div>
       <div className="footer-bottom">
         <p className="copyright">© 2024 Proeffekt AB</p>
+        <div className="design-credit-wrapper">
+          <a
+            href="https://www.eidhaart.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="design-credit-link"
+          >
+            Designed By Eidhaart
+          </a>
+        </div>
       </div>
     </footer>
   );

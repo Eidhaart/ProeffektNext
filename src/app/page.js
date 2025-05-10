@@ -5,6 +5,7 @@ import About from "@/components/About";
 import ContactComponent from "@/components/ContactComponent";
 import ContactForm from "@/components/modals/ContactForm";
 import Home1 from "@/components/Home";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <ContactBar />
       <About />
       <ContactComponent />
+      <Footer />
     </div>
   );
 }

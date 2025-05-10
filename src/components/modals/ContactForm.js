@@ -92,9 +92,9 @@ const ContactForm = ({ buttonText = "Contact Us" }) => {
 
             <input
               type="text"
-              name="name"
+              name="fullName"
               placeholder="Namn"
-              value={formData.name}
+              value={formData.fullName}
               onChange={handleChange}
               required
             />
@@ -114,9 +114,9 @@ const ContactForm = ({ buttonText = "Contact Us" }) => {
               onChange={handleChange}
             />
             <textarea
-              name="message"
+              name="comments"
               placeholder="Meddelande"
-              value={formData.message}
+              value={formData.comments}
               onChange={handleChange}
               required
             ></textarea>

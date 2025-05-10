@@ -1,0 +1,16 @@
+.design-credit-wrapper {
+  background-color: #333333;
+  padding: 5px;
+  display: inline-block; /* fits perfectly around your text */
+}
+
+.design-credit-link {
+  color: #ffa500; /* Stylish orange to pop against the dark background */
+  font-size: 0.85rem;
+  text-decoration: none;
+  font-family: AmazOOSTROVFinettf, sans-serif;
+}
+
+.design-credit-link:hover {
+  text-decoration: underline;
+}

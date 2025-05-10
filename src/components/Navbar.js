@@ -1,7 +1,6 @@
 "use client";
-
 import React, { useState } from "react";
-
+// import { FiMenu } from "react-icons/fi";
 import "./Navbar.css";
 
 import { Twirl as Hamburger } from "hamburger-react";
@@ -23,7 +22,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="logo-and-title">
         <div className="logo">
-          <img src="/logotypblank.png" alt="Proeffekt AB Logo"></img>{" "}
+          <img src="/images/logotypblank.png" alt="Proeffekt AB Logo"></img>{" "}
           {/* Always provide alt attributes for accessibility */}
         </div>
         <span>PROEFFEKT AB</span>
