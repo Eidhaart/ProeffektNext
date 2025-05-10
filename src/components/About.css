@@ -1,111 +1,68 @@
-/* src/components/Services.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 
-.title h2 {
-  text-align: center;
-  font-size: 2rem;
-}
-
-.title p {
-  text-align: center;
-  font-style: italic;
-  filter: opacity(80%);
-}
-
-.services-list {
-  justify-content: center;
-  justify-items: center;
+.about-us-container {
+  display: flex;
   align-items: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* Creates two columns of equal width */
-  gap: 20px; /* Smaller gap between the columns */
-  justify-content: center; /* Centers the grid items */
-  width: auto; /* Adjust the width as needed */
-  margin: auto; /* Centers the grid container horizontally */
-  max-width: 70vw;
-  flex-wrap: wrap;
   justify-content: center;
-  margin-top: 50px;
+  background-image: url("/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 40px;
+  font-family: "Poppins", sans-serif;
+  min-height: 500px;
+  flex-wrap: wrap; /* Allows content to adjust better on smaller screens */
+  flex-direction: column;
 }
 
-.service {
-  min-width: 300px;
-  transition: all 0.1s ease;
+.about-us-text h2 {
+  color: #ffa500;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
 }
 
-/* SimpleCard.module.css */
-.card {
-  border-radius: 5px;
-  max-width: 345px;
-  min-width: 300px;
-  transition: all 0.1s ease;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  margin: 1rem auto; /* Center the card in the page */
-  overflow: hidden; /* Ensures content does not spill outside the card */
-  display: block; /* This makes the card behave as a block-level element */
+.about-us-text {
+  background-color: rgba(46, 46, 46, 0.9);
+  border-radius: 10px;
+  max-width: 50%; /* Increased for better responsiveness */
+  padding: 20px;
+  margin: 5% auto; /* Centers the box and prevents it from getting too close to edges */
+  text-align: center; /* Keeps text centered for better readability */
+  font-size: 0.7rem;
 }
 
-.cardActionArea {
-  text-decoration: none;
-  color: inherit;
+.about-us-text p {
+  line-height: 1.8; /* Improved readability */
+  font-size: 1.1em; /* Slightly larger text for clarity */
 }
 
-.cardActionArea:hover {
-  text-decoration: none; /* Prevents underline on hover */
-}
-
-.cardMedia {
-  width: 100%; /* Ensures the image takes up 100% width of the card */
-  height: 140px; /* Fixed height for images */
-  object-fit: cover; /* Ensures images cover the area without distorting aspect ratio */
-
-  filter: brightness(100%);
-  transition: all 0.2s ease-in-out;
-}
-.card:hover .cardMedia {
-  filter: brightness(
-    100%
-  ); /* Ensures images cover the area without distorting aspect ratio */
-}
-
-.card:hover {
-  transform: scale(1);
-}
-
-.cardContent {
-  padding: 16px;
-}
-
-.header {
-  margin: 0;
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
-.text {
-  font-size: 0.875rem;
-  color: #6c757d;
-}
-
-@media (max-width: 1200px) {
-  .services-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 60vw;
-  }
-  .service {
-    min-width: 400px;
-    transition: all 0.1s ease;
-  }
-}
-@media (max-width: 900px) {
-  .services-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    max-width: 100vw;
+@media (max-width: 768px) {
+  .about-us-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    min-height: auto;
   }
 
-  .service {
-    min-width: 300px;
-    transition: all 0.1s ease;
+  .about-us-image {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 100%;
+  }
+
+  .about-us-text {
+    max-width: 80%; /* Adjusted to keep text readable on smaller screens */
+    padding: 15px;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us-text {
+    max-width: 90%; /* Ensures text box remains readable */
+    padding: 15px;
   }
 }
