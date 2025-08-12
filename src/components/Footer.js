@@ -33,7 +33,7 @@ const Footer = () => {
         <div className="right-column">
           <div className="links-column">
             <a href="#home">Hem</a>
-            <a href="#calculator">Kalkylator</a>
+            {/* <a href="#calculator">Kalkylator</a> */}
             <a href="#about">Om oss</a>
             <a href="#contact">Kontakt</a>
             <a href="#privacy-policy">Dataskyddspolicy</a>

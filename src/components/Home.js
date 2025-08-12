@@ -1,15 +1,29 @@
 "use client";
 
 import React from "react";
-import "./Home.css"; // Make sure to create a Home.css file for styling
+import "./Home.css";
 import ContactForm from "./modals/ContactForm";
 
 const Home = ({ onOpenContactForm }) => {
   return (
     <div id="home">
       <div className="home-container">
-        {/* Add the Proeffekt text and the horizontal bar here */}
+        {/* Background video */}
+        <video
+          className="bg-video"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          poster="/renovation.jpg"
+        >
+          <source src="/background.mp4" type="video/mp4" />
+          {/* Fallback text if video can't play */}
+          Din webbläsare kan inte spela upp videon.
+        </video>
 
+        {/* Foreground content */}
         <div className="text-container">
           <div className="proeffekt-title">Proeffekt</div>
           <div className="orange-bar"></div>
@@ -22,7 +36,6 @@ const Home = ({ onOpenContactForm }) => {
               och öppen kommunikation
             </i>
           </p>
-
           <ContactForm buttonText="Kontakta oss" />
         </div>
       </div>
