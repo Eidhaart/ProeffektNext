@@ -18,9 +18,10 @@ const Home = ({ onOpenContactForm }) => {
           preload="metadata"
           poster="/renovation.jpg"
         >
+          {/* H.264 MP4 for iOS Safari */}
           <source src="/background.mp4" type="video/mp4" />
-          {/* Fallback text if video can't play */}
-          Din webbläsare kan inte spela upp videon.
+          {/* Optional: WebM for Chrome/Android */}
+          <source src="/background.webm" type="video/webm" />
         </video>
 
         {/* Foreground content */}
